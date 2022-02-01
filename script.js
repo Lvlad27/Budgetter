@@ -30,22 +30,3 @@ document.addEventListener('keydown', function (e) {
 		closeModal();
 	}
 });
-
-///////////////////////////////////////
-///////////////////////////////////////
-const message = document.createElement('div');
-message.classList.add('cookie-message');
-message.innerHTML = 'We use cookies for improved functionality and analytics. <button class="btn btn--close-cookie">Got it!</button>';
-header.append(message);
-// header.before(message);
-// header.after(message);
-
-// Delete elements
-document.querySelector('.btn--close-cookie').addEventListener('click', function () {
-	message.remove();
-});
-
-//Styles
-message.style.backgroundColor = '#37383d';
-message.style.width = '120%';
-console.log(message.style.height);
