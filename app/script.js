@@ -174,7 +174,7 @@ const startLogOutTimer = function () {
 		// When 0 seconds, stop timer and log out user
 		if (time === 0) {
 			clearInterval(timer);
-			labelWelcome.textContent = 'Log in to get started';
+			labelWelcome.textContent = 'Log in to get started!';
 			containerApp.style.opacity = 0;
 		}
 
@@ -204,7 +204,7 @@ btnLogin.addEventListener('click', function (e) {
 
 	if (currentAccount?.pin === +inputLoginPin.value) {
 		// Display UI and message
-		labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]}`;
+		labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]}!`;
 		containerApp.style.opacity = 100;
 
 		// Create current date and time
