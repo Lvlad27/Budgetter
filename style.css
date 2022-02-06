@@ -131,7 +131,7 @@ img {
 }
 
 .nav__logo {
-	height: 4.5rem;
+	height: 15rem;
 	transition: all 0.3s;
 }
 
@@ -153,6 +153,20 @@ img {
 	text-decoration: none;
 	display: block;
 	transition: all 0.3s;
+}
+
+.page__link:link,
+.page__link:visited {
+	/* margin-left: 25rem; */
+	font-size: 1.7rem;
+	font-weight: 400;
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+	padding: 0.8rem 2.5rem;
+	border-radius: 3rem;
+	background-color: var(--color-tertiary);
+	color: #222;
 }
 
 .nav__link--btn:link,
@@ -569,10 +583,9 @@ h4 {
 }
 
 .footer__logo {
-	height: 5rem;
+	height: 20rem;
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 5rem;
 }
 
 .footer__copyright {
@@ -658,6 +671,11 @@ h4 {
 .hidden {
 	visibility: hidden;
 	opacity: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 /* COOKIE MESSAGE */

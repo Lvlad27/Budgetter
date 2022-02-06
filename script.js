@@ -151,6 +151,7 @@ headerObserver.observe(header);
 
 // Reveal sections
 const allSections = document.querySelectorAll('.section');
+console.log(allSections);
 
 const revealSection = function (entries, observer) {
 	const [entry] = entries;
@@ -168,7 +169,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach(function (section) {
 	sectionObserver.observe(section);
-	// section.classList.add('section--hidden');
+	section.classList.add('section--hidden');
 });
 
 // Lazy loading images
