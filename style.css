@@ -82,6 +82,24 @@ body {
 	background-color: var(--color-primary-darker);
 }
 
+.btn--red {
+	display: inline-block;
+	background-color: var(--color-tertiary);
+	font-size: 1.6rem;
+	font-family: inherit;
+	font-weight: 500;
+	border: none;
+	padding: 1.25rem 4.5rem;
+	border-radius: 10rem;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn--red:hover {
+	background-color: var(--color-primary-darker);
+	color: var(--gradient-secondary);
+}
+
 .btn--text {
 	display: inline-block;
 	background: none;
@@ -157,7 +175,7 @@ img {
 
 .page__link:link,
 .page__link:visited {
-	/* margin-left: 25rem; */
+	margin-top: 20rem;
 	font-size: 1.7rem;
 	font-weight: 400;
 	color: inherit;
