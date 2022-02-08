@@ -61,13 +61,11 @@ btnScrollTo.addEventListener('click', function (e) {
 // 2. Determine what element originated the event
 
 document.querySelector('.nav__links').addEventListener('click', function (e) {
-	console.log(e.target);
 	e.preventDefault();
 
 	// Matching strategy
 	if (e.target.classList.contains('nav__link')) {
 		const id = e.target.getAttribute('href');
-		console.log(id);
 		document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
 	}
 });
@@ -151,7 +149,6 @@ headerObserver.observe(header);
 
 // Reveal sections
 const allSections = document.querySelectorAll('.section');
-console.log(allSections);
 
 const revealSection = function (entries, observer) {
 	const [entry] = entries;
@@ -272,8 +269,3 @@ const slider = function () {
 	});
 };
 slider();
-
-/////
-document.addEventListener('DOMContentLoaded', function (e) {
-	console.log('HTML parsed and DOM tree built!', e);
-});
