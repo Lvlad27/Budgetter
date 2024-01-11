@@ -2,7 +2,7 @@
 
 Budgetter is a web-based financial management application. It allows users to track their deposits and withdrawals, request loans, and manage account transfers. The app is designed for demonstration and educational purposes, showcasing advanced JavaScript functionalities.
 
-View it here: lvlad27.github.io/Budgetter/
+View it here: https://lvlad27.github.io/Mapty/
 
 ## Features
 - Track financial movements with dates and amounts.
